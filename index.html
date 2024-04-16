@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+<script>
+     person = {
+        fName : "Muhammad",
+        lName : "Ayaz",
+        get fullName()
+        {
+            return `${this.fName} ${this.lName}`;
+        },
+        set fullName (value){
+            let theName = value.split('');
+            this.fName = theName[0];
+            this.lName = theName[1];
+        }
+     }
+     person.fullName = 'Nasir khan';
+     console.log(person);
+     function car(model,color,year)
+     {
+        this.model = model;
+        this.color = color;
+        this.year = year;
+     }
+     let car1 = new car('car1','red',1923);
+     let car2 = new car('car2','red',1923);
+     let car3 = new car('car3','red',1923);
+     let car4 = new car('car4','red',1923);
+     console.log(car1.model);
+     console.log(car2.color);
+     console.log(car3.color);
+     console.log(car4.color);
+
+
+     class cars {
+        constructor(name){
+            this.name = name;
+        }
+     }
+     let car11 = new cars('ayaz');
+     console.log(car11.name);
+</script>
+</html>
